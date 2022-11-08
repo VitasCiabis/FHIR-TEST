@@ -27,7 +27,7 @@ namespace FHIR_TEST
             //Bundle patientBundle = fhirClient.Search<Patient>(new string[] {"identifier=43798506"}); //Buscar por DNI del paciente
             //Bundle patientBundle = fhirClient.Search<Patient>(new string[] {"family=anconetani"}); //Buscar por apellido del paciente
             //Bundle patientBundle = fhirClient.Search<Patient>(new string[] {"family=anconetani", "name=mario"}); //Buscar por nombre y apellido
-            Bundle patientBundle = fhirClient.Search<Patient>(new string[] {"name=maria","family=anconetani", "identifier=43798505"}); //Buscar por nombre, apellido y DNI
+            Bundle patientBundle = fhirClient.Search<Patient>(new string[] {"name=victoria","family=anconetani", "identifier=43798505"}); //Buscar por nombre, apellido y DNI
 
             Console.WriteLine($"Total: {patientBundle.Total} Entry count: {patientBundle.Entry.Count}");
 
